@@ -1,0 +1,14 @@
+<suite name="Parallel tests" parallel="tests" thread-count="1" >
+    <test name="Test One">
+        <parameter name="test-name" value="Test One"/>
+        <classes>
+            <class name="e2e_Suites.PositiveRun" />
+        </classes>
+    </test>
+    <test name="Test two">
+        <parameter name="test-name" value="Test two"/>
+        <classes>
+            <class name="e2e_Suites.NegativeRun" />
+        </classes>
+    </test>
+</suite>
