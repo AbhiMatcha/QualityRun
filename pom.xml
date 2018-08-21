@@ -38,6 +38,7 @@
                 <version>2.22.0</version>
                 <configuration>
                     <suiteXmlFiles>
+
                         <suiteXmlFile>suites-test-testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
@@ -67,6 +68,12 @@
             <artifactId>testng</artifactId>
             <version>6.14.3</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.14.3</version>
+            <scope>compile</scope>
         </dependency>
 
         <!--<dependency>-->
