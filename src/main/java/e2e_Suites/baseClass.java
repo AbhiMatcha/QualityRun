@@ -3,6 +3,7 @@ package e2e_Suites;
 import org.apache.commons.io.FileUtils;
 import org.junit.Rule;
 import org.junit.rules.TestName;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -51,11 +52,11 @@ public abstract class baseClass implements IRetryAnalyzer
          * when running in local and select "/Driver/Ubuntu/chromedriver" for server
          * machine.
          */
-
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("-start-fullscreen");
-        driver = new ChromeDriver(chromeOptions);
-        driver.manage().deleteAllCookies();
+//
+//        ChromeOptions chromeOptions = new ChromeOptions();
+//        chromeOptions.addArguments("-start-fullscreen");
+//        driver = new ChromeDriver(chromeOptions);
+//        driver.manage().deleteAllCookies();
 
         /* Points to remember
          *
@@ -71,12 +72,12 @@ public abstract class baseClass implements IRetryAnalyzer
          */
 
 //        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/Driver/Mac/chromedriver");
-//        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/Driver/Ubuntu/chromedriver");
-//        ChromeOptions options = new ChromeOptions();
-//        options.addArguments("--headless");
-//        driver = new ChromeDriver(options);
-//        driver.manage().window().setSize(new Dimension(1440, 900));
-//        driver.manage().window().maximize();
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/Driver/Ubuntu/chromedriver");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        driver = new ChromeDriver(options);
+        driver.manage().window().setSize(new Dimension(1440, 900));
+        driver.manage().window().maximize();
 
     }
 
