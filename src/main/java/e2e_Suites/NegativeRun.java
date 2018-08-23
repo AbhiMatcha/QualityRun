@@ -1,6 +1,5 @@
 package e2e_Suites;
 
-import testCasesAndMethods.NegativetestCases.*;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
