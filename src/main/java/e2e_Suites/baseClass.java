@@ -3,19 +3,17 @@ package e2e_Suites;
 import org.apache.commons.io.FileUtils;
 import org.junit.Rule;
 import org.junit.rules.TestName;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.IRetryAnalyzer;
-
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public abstract class baseClass  implements IRetryAnalyzer
+public abstract class baseClass implements IRetryAnalyzer
 {
     //protected static FirefoxDriver driver;
     public static int counter = 0;
